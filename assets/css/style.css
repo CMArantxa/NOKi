@@ -1,0 +1,116 @@
+* {
+    font-family: "Advent Pro", sans-serif;
+}
+header nav {
+    background-color: antiquewhite;
+    color: #90091d;
+    margin-left: auto; /* Empuja el nav hacia la derecha */
+}
+.custom-link {
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    color: #90091d;
+    border: none;
+}
+
+#barra {
+   background-color: antiquewhite;
+}
+main{
+    background: linear-gradient(45deg, rgba(242, 171, 108, 0.2), rgba(246, 162, 65, 0.5));
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-text {
+    color: #90091d;
+    margin-top: 300px;
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 7s linear infinite;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: #90091d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .social-links {
+    width: 45%;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-links ul li a {
+    color: #90091d;
+    text-decoration: none;
+}
+
+.btn-custom-me-2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: #00FF80; /* Color del texto */
+    border: none;
+}
+.btn-lg {
+    margin-left: 200px;
+    margin-right: 150px;
+    background-color: #90091d;
+    color:antiquewhite;
+    align-items: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    padding: 40px; /* Ajusta el relleno según sea necesario */
+    font-size: 48px; /* Cambia el tamaño de la fuente */
+}
+
+
+
+/* Media queries para hacerlo responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        margin-left: 10px;
+        font-size: 24px;
+    }
+
+    header nav {
+        display: none; /* Oculta el nav en pantallas pequeñas */
+    }
+
+    #barra {
+        font-size: 16px;
+    }
+
+    .scrolling-text {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .social-links {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
